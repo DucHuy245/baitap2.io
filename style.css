@@ -2,16 +2,56 @@
     display: flex;
     background-color: rgb(194, 243, 122);
     margin: 0px 200px;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
-.info{
+
+.line{
+    border-bottom: 20px solid rgb(132, 203, 26);
+    margin: 0 200px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.main{
+    margin: 0px 200px;
     display: flex;
 }
-h1{
-    color: aqua;
-    text-align: left;
-    text-underline-position: above;
+
+.underline{
+    border-bottom: 5px solid rgb(2, 88, 2);
+    border-radius: 10px;
+    width: 15%;
 }
+
+.left-side{
+    width: 50%;
+
+}
+
+.right-side{
+    width: 50%;
+
+}
+
+.info{
+    display: flex;
+    width: 35vw;
+    justify-content: space-between;
+}
+
+h1{
+    margin-block-end: 0px;
+    color: rgb(2, 88, 2);
+    text-align: left;
+}
+
+.role{
+    font-size: 20px;
+    text-decoration: none;
+    margin-block-start: 0px;
+}
+
 img {
     border: 10px solid rgb(132, 203, 26);
     border-radius: 50%;
@@ -19,6 +59,27 @@ img {
     height: 200px;
     margin: 20px;
 }
+
 .infomation {
     margin: 0px 50px;
+}
+
+ul{
+    list-style-position: inside;
+    padding-inline-start: 0px;
+    margin-block-start: 0px;
+    list-style-type: none;
+}
+
+li{
+    font-size: 18px;
+}
+
+ul li::before {
+    content: '\2022';
+    color: rgb(2, 88, 2);
+    font-size: 36px;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
 }
